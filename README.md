@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+Quick Serve for Magic City Sports Cafe is a Mini ERP solution for Magic City.
+The project comprises of a Backbone API developed with Django-Rest Framework, a web portal(Web Client) developed with Django and a Mobile portal(Mobile Client) developed with Ionic3 hybrid application framework.
 
-You can use the [editor on GitHub](https://github.com/vadramson/quickserve/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+As Added value to the organization: -
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vadramson/quickserve/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+-> Reduction on expenditures of overstock, understock and “theft” (non accountability of actions) by 90% due to the implementation of the Quick Serve Mini ERP at Magic City Sports Café Yaoundé.
+-> Assurance, traceability and documentation of the effective presence of employees at Magic City Sports Café Yaoundé.
