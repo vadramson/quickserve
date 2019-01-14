@@ -1,0 +1,147 @@
+{% extends 'receipts.html' %}
+
+{% load static %}
+{% block content %}
+        <style>
+        .headTable{
+{#            background-color: #1b6d85;#}
+            padding-left: 3%;
+        }
+
+        .headTable td{
+{#            padding-left: 10%;#}
+        }
+
+        .table{
+{#                    padding-left: 5%;#}
+                    padding-top: 15px;
+                    text-align: center;
+{#                    border: 2px solid saddlebrown;#}
+                }
+
+               .table th{
+                    background-color: #66512c;
+                    padding: 25px;
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                    border: #66512c;
+                }
+        .table td{
+            padding-left: 25px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        </style>
+<div id="recipt" style="width: 60%; background-color: white; margin: 0 auto;" padding-left="25px;" class="row">
+    <img  src="{% static 'images/Sales-Receipt.png' %}" width="100%">
+    <div class="col-md-12">
+        <div class="x_panel">
+            <div class="x_content">
+                <section class="content invoice">
+                    <!-- title row -->
+{#                    <div class="row">#}
+{#                        <div class="col-xs-12 ">#}
+{#                            <h1>#}
+{#                               Invoice.#}
+{#                                 {% for c in sales %}#}
+{#                                  <small class="date">Date: {{ c.salesDate }}</small>#}
+{#                                {% endfor %}#}
+{#                            </h1>#}
+{#                        </div>#}
+{#                        <!-- /.col -->#}
+{#                    </div>#}
+                    <!-- info row -->
+                    <div class="row invoice-info">
+                    </div>
+{#                <center>#}
+                    <table class="headTable">
+                        <tr>
+                            <td style="width: 30%;">
+                                <div class="col-sm-4 invoice-col">
+                                    From
+                                    <address>
+                                        <strong>Magic City Sports Cafe.</strong>
+                                        <br>Shell NSIMEYONG
+                                        <br>Younde Cameroun
+                                        <br>Phone: (+ 237) 695 335 910
+                                        <br>Email: info@magiccity.com
+                                    </address>
+                                </div>
+                            </td>
+                            <td style="width: 30%;">
+                                <div class="col-sm-4 invoice-col">
+                                    Customer:
+                                    <address>
+                                        {% for c in sales %}
+                                            <strong> {{ c.customer }} </strong>
+                                        {% endfor %}
+                                    </address>
+                                    Amount:
+                                    <address>
+{#                                        {% for cash in total %}#}
+                                            <strong> {{ total }} </strong>
+{#                                        {% endfor %}#}
+                                    </address>
+                                </div>
+                            </td>
+                            <td style="width: 30%;">
+                                {% for c in sales %}
+                                    <div class="col-sm-4 invoice-col">
+                                        <b>Invoice # {{ c.invoiceNumber }}</b>
+                                        <br>
+                                        <br>
+                                        <b>Order ID: </b> {{ c.invoiceNumber }}
+                                        <br>
+                                        <b>Payment Due:</b> {{ c.salesDate }}
+                                        <br>
+                                        <b>Waitress: </b> {{ c.user }}
+                                    </div>
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    </table>
+{#                </center>#}
+                    <!-- /.row -->
+
+                    <!-- Table row -->
+                    <div class="row">
+                        <div class="col-sm-12 table">
+                            <table class="table">
+                                <thead style="background-color: #66512c;">
+                                <tr style="background-color: #66512c;">
+                                    <th>#</th>
+                                    <th>Product</th>
+                                    <th>Qty.</th>
+                                    <th>Price F CFC</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for order in orders %}
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{ order.product }}</td>
+                                    <td>{{ order.quantity }}</td>
+                                    <td>{{ order.product.price }}</td>
+                                    <td>{{ order.amount }}</td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </section>
+            </div>
+        </div>
+    </div>
+    <img  src="{% static 'images/footer-Reports.png' %}" width="100%">
+</div>
+
+
+{% endblock %}

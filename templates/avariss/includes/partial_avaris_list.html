@@ -1,0 +1,21 @@
+{% for avaris in avariss %}
+  <tr>
+    <td>{{ avaris.user }}</td>
+    <td>{{ avaris.product }}</td>
+    <td>{{ avaris.quantity }}</td>
+    <td>{{ avaris.reason }}</td>
+    <td>{{ avaris.dateOp }}</td>
+    <td >
+      <button type="button"
+              class="btn btn-warning btn-xs js-update-avaris"
+              data-url="{% url 'avaris_update' avaris.id %}"
+              data-toggle="tooltip" data-placement="top" title="Edit Avaris">
+        <span class="glyphicon glyphicon-pencil"></span> Edit
+      </button>
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No Avariss Yet!</td>
+  </tr>
+{% endfor %}

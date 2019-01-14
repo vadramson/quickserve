@@ -1,0 +1,26 @@
+{% for agency in agencys %}
+  <tr>
+{#    <td>{{ agency.id }}</td>#}
+    <td>{{ agency.agency }}</td>
+    <td>{{ agency.agencyAddress }}</td>
+    <td>{{ agency.agencyTelephone }}</td>
+    <td >
+      <button type="button"
+              class="btn btn-warning btn-xs js-update-agency"
+              data-url="{% url 'agency_update' agency.id %}"
+              data-toggle="tooltip" data-placement="top" title="Edit Agency">
+        <span class="glyphicon glyphicon-pencil"></span> Edit
+      </button>
+      <button type="button"
+              class="btn btn-danger btn-xs js-delete-agency"
+              data-url="{% url 'agency_delete' agency.id %}"
+              data-toggle="tooltip" data-placement="top" title="Delete Agency">
+        <span class="glyphicon glyphicon-trash"></span> Delete
+      </button>
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No agency Yet!</td>
+  </tr>
+{% endfor %}

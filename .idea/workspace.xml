@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ef2ed77-b948-4c5c-b60f-5733db22b393" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/SosChat/forms.py" />
+      <change type="NEW" beforePath="" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/SosChat/urls.py" />
+      <change type="NEW" beforePath="" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/SosChat/views working well but I need to introduce ajxx search for chats.py" />
+      <change type="NEW" beforePath="" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/templates/admin/chat/messages.html" />
+      <change type="NEW" beforePath="" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/templates/sos_chat/getAjax_Message.html" />
+      <change type="NEW" beforePath="" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/templates/sos_chat/index - Copy - All systems go Growl Notifications to be included next.html" />
+      <change type="NEW" beforePath="" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/templates/sos_chat/index -Copy - almost all system go but  I need now to intro ajax method of getting chat respective of current user and user selected to chat with.html" />
+      <change type="NEW" beforePath="" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/templates/sos_chat/message_notif.html" />
+      <change type="NEW" beforePath="" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/templates/sos_chat/messages.html" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/db.sqlite3" afterPath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Checkout_26-02-2018" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Checkout_26-02-2018" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/db.sqlite3" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/resources/icon.png" afterPath="G:/Pro/HTTC Students App/H3TCApk/resources/icon.png" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/.idea/new_sos.iml" afterPath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/.idea/new_sos.iml" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/Bank/models.py" afterPath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/Bank/models.py" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/Bank/views.py" afterPath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/Bank/views.py" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/SosChat/views.py" afterPath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/SosChat/views.py" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/new_sos/urls.py" afterPath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/new_sos/urls.py" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/templates/index.html" afterPath="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/templates/index.html" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/R_and_D/.idea/R_and_D.iml" afterPath="G:/Pro/Africashine-systems/Projects/R_and_D/.idea/R_and_D.iml" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/.idea/Sos_Transfusion.iml" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/.idea/Sos_Transfusion.iml" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Donor/admin.py" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Donor/admin.py" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Donor/models.py" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Donor/models.py" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Sos_Transfusion/settings.py" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Sos_Transfusion/settings.py" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Sos_Transfusion/urls.py" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Sos_Transfusion/urls.py" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/static/cht_script.js" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/static/cht_script.js" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/static/jquery/dist/jquery.min.js" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/static/jquery/dist/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/templates/admin/index.html" afterPath="G:/Pro/Africashine-systems/Projects/Sos_Transfusion/templates/admin/index.html" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/config.xml" afterPath="G:/Pro/HTTC Students App/H3TCApk/config.xml" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/ionic.config.json" afterPath="G:/Pro/HTTC Students App/H3TCApk/ionic.config.json" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/package.json" afterPath="G:/Pro/HTTC Students App/H3TCApk/package.json" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/app/app.component.ts" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/app/app.html" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/app/app.html" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/app/app.module.ts" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/app/app.scss" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/app/app.scss" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/pages/home/home.html" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/pages/home/home.html" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/pages/home/home.scss" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/pages/home/home.scss" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/pages/home/home.ts" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/pages/home/home.ts" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/pages/list/list.html" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/pages/list/list.html" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/pages/list/list.scss" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/pages/list/list.scss" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/pages/list/list.ts" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/pages/list/list.ts" />
+      <change type="MODIFICATION" beforePath="G:/Pro/HTTC Students App/H3TCApk/src/theme/variables.scss" afterPath="G:/Pro/HTTC Students App/H3TCApk/src/theme/variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/QuickApp.iml" afterPath="$PROJECT_DIR$/.idea/QuickApp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuickApp/urls.py" afterPath="$PROJECT_DIR$/QuickApp/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuickAppWorking Snippets Before Advanced Picture Handling/QuickServe/Working views.py" afterPath="$PROJECT_DIR$/QuickAppWorking Snippets Before Advanced Picture Handling/QuickServe/Working views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuickAppWorking Snippets Before Advanced Picture Handling/QuickServe/views.py" afterPath="$PROJECT_DIR$/QuickAppWorking Snippets Before Advanced Picture Handling/QuickServe/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuickServe/Working views.py" afterPath="$PROJECT_DIR$/QuickServe/Working views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuickServe/static/src/js/menu.js" afterPath="$PROJECT_DIR$/QuickServe/static/src/js/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuickServe/views.py" afterPath="$PROJECT_DIR$/QuickServe/views.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/QuickApp$manage.coverage" NAME="manage Coverage Results" MODIFIED="1517678590394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.sqlite3" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.sqlite3" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.sqlite3" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Admin_Graph_bank" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="QuickApp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="partial_major_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/templates/my_results/includes/partial_major_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>h1</find>
+      <find>headers</find>
+      <find>postDataEmpty</find>
+      <find>checkActive</find>
+      <find>activePage</find>
+      <find>storage</find>
+      <find>openPage</find>
+      <find>AuthServiceProvider</find>
+      <find>authServiceProvider</find>
+      <find>actionSheet</find>
+      <find>fill_marks</find>
+      <find>OR</find>
+      <find>CourseAverage</find>
+      <find>newTabs</find>
+      <find>AddTabPage</find>
+      <find>orderParticular</find>
+      <find>numORD</find>
+      <find>orderData</find>
+      <find>orderDetails</find>
+      <find>orderDataSet</find>
+      <find>datat</find>
+      <find>order</find>
+      <find>courseReg</find>
+      <find>MajorPage</find>
+      <find>onContextChange</find>
+      <find>presentToast</find>
+      <find>ordIDNum</find>
+      <find>my_courses</find>
+      <find>events</find>
+      <find>extr</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/login/login.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/login/login.html" />
+        <option value="G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/HT3C_App/settings/production.py" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/login/login.ts" />
+        <option value="$PROJECT_DIR$/QuickApk/src/pages/home/home.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/profile/profile.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/profile/profile.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/profile/profile.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/course-reg/course-reg.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/major/major.scss" />
+        <option value="G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/BaseUser/models.py" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/providers/h3tc-api/h3tc-api.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/major/major.html" />
+        <option value="$PROJECT_DIR$/QuickApk/src/pages/orders/orders.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/major/major.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/minor/minor.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/minor/minor.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/elective/elective.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/minor/minor.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/elective/elective.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/course-reg/course-reg.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/course-reg/course-reg.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/required/required.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/required/required.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/required/required.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/formb/formb.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/formb/formb.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/formb/formb.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/ca-results/ca-results.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/elective/elective.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/ca-results/ca-results.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/exam-results/exam-results.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/ca-results/ca-results.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/exam-results/exam-results.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/exam-results/exam-results.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/semester-results/semester-results.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/semester-results/semester-results.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/semester-results/semester-results.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/app/app.module.ts" />
+        <option value="G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/Administration/models.py" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/transcripts/transcripts.scss" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/transcripts/transcripts.ts" />
+        <option value="G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/BaseUser/serializers.py" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/transcripts/transcripts.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/home/home.ts" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/home/home.html" />
+        <option value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/app/app.component.ts" />
+        <option value="G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/HT3C_App/urls.py" />
+        <option value="G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/BaseUser/views.py" />
+        <option value="G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/templates/home/scroll.html" />
+        <option value="G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/templates/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="G:/Pro/HTTC Students App/H3TCApk/node_modules" />
+    <handled-path value="G:/Pro/HTTC Students App/H3TCApk/platforms/android/cordova/node_modules" />
+    <handled-path value="G:/Pro/HTTC Students App/H3TCApk/plugins/cordova-sqlite-storage/node_modules" />
+    <handled-path value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/node_modules" />
+    <handled-path value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/platforms/android/cordova/node_modules" />
+    <handled-path value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK/plugins/cordova-sqlite-storage/node_modules" />
+    <handled-path value="$PROJECT_DIR$/QuickApk/node_modules" />
+    <handled-path value="$PROJECT_DIR$/QuickApk/plugins/cordova-sqlite-storage/node_modules" />
+    <handled-path value="$PROJECT_DIR$/platforms/android/cordova/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="22" />
+    <option name="width" value="1444" />
+    <option name="height" value="886" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HT3C_App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HT3C_App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HT3C_App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HT3C_App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="G:/Pro/HTTC Students App/HTAPK/H3TC_APK" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Pro\HTTC Students App\HT3C_App\HT3C\HT3C_App\templates\home" />
+      <recent name="G:\Pro\HTTC Students App\HT3C_App\HT3C\HT3C_App\templates\my_courses" />
+      <recent name="G:\Pro\HTTC Students App\HT3C_App\HT3C\HT3C_App\templates\my_courses\includes" />
+      <recent name="G:\Pro\Africashine-systems\Projects\New_Sos_Alert_Transfusion\new_sos\templates" />
+      <recent name="G:\Pro\Africashine-systems\Projects\New_Sos_Alert_Transfusion\new_sos\templates\news\articles\includes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Pro\Africashine-systems\Projects\New_Sos_Alert_Transfusion\new_sos\templates\users_Super\includes" />
+      <recent name="G:\Pro\Africashine-systems\Projects\Sos_Transfusion\templates\sos_chat" />
+      <recent name="G:\Pro\Africashine-systems\Projects\Sos_Transfusion\templates\admin" />
+      <recent name="G:\Pro\Africashine-systems\Projects\R_and_D\Admin_Graph" />
+      <recent name="G:\Pro\Africashine-systems\Projects\Sos_Project\sos_alert" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.HT3C_App">
+    <configuration default="false" name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QuickApp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="3484842121097.svg" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/QuickApp/new_sos/static/media/3484842121097.svg">
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QuickApp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QuickApp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QuickApp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QuickApp" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QuickApp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <platform value="ANDROID" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="QuickApp" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QuickApp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QuickApp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Sos_Project" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Sos_Project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Sos_Project" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Sos_Transfusion" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Sos_Transfusion.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Sos_Transfusion" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="QuickApp" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="SAT.settings" />
+        <env name="DJANGO_SETTINGS_MODULE=QuickApp.settings;PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="G:\Pro\Africashine-systems\Projects\Africashine_vEnv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SAT" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SAT" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="SAT.settings;PYTHONUNBUFFERED&#9;1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Vadrama\AppData\Local\Programs\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SAT" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="R_and_D" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="R_and_D.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="R_and_D" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="new_sos" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="new_sos.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="new_sos" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="HT3C_App" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="HT3C_App.settings;PYTHONUNBUFFERED=1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="QuickApp.settings" />
+      </envs>
+      <option name="SDK_HOME" value="G:\Pro\HTTC Students App\H3Tvenv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="QuickApp" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <list size="9">
+      <item index="0" class="java.lang.String" itemvalue="Django server.Sos_Project" />
+      <item index="1" class="java.lang.String" itemvalue="Django server.Sos_Transfusion" />
+      <item index="2" class="java.lang.String" itemvalue="Django server.QuickApp" />
+      <item index="3" class="java.lang.String" itemvalue="Django server.SAT" />
+      <item index="4" class="java.lang.String" itemvalue="Django server.R_and_D" />
+      <item index="5" class="java.lang.String" itemvalue="Django server.new_sos" />
+      <item index="6" class="java.lang.String" itemvalue="Django server.HT3C_App" />
+      <item index="7" class="java.lang.String" itemvalue="Python.manage" />
+      <item index="8" class="java.lang.String" itemvalue="JavaScript Debug.3484842121097.svg" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.3484842121097.svg" />
+        <item index="1" class="java.lang.String" itemvalue="Python.manage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ef2ed77-b948-4c5c-b60f-5733db22b393" name="Default" comment="" />
+      <created>1503051447025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1503051447025</updated>
+    </task>
+    <task id="LOCAL-00001" summary="working on Chat intergration">
+      <created>1520857093724</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520857093754</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="22" width="1444" height="886" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19869941" sideWeight="0.49003986" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52058434" sideWeight="0.50289017" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3426295" sideWeight="0.49710983" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39176628" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20845272" sideWeight="0.5099602" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52058434" sideWeight="0.50289017" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3426295" sideWeight="0.49710983" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39176628" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1991404" sideWeight="0.49003986" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20845272" sideWeight="0.5099602" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/Reflect.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/Reflect.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-metadata.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-decorate.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
+        <option value="$PROJECT_DIR$/QuickApk/node_modules/reflect-metadata/test/reflect-hasmetadata.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working on Chat intergration" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on Chat intergration" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/app/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/minor/minor.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/required/required.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/required/required.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2738">
+          <caret line="184" column="12" lean-forward="false" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/major/major.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/course-reg/course-reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="17" lean-forward="false" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/required/required.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/course-reg/course-reg.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/elective/elective.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/profile/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/profile/profile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/formb/formb.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/major/major.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="165" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/elective/elective.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/elective/elective.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="94" column="3" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="94" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/BaseUser/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="91" column="31" lean-forward="false" selection-start-line="85" selection-start-column="4" selection-end-line="91" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/ca-results/ca-results.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/minor/minor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="163" column="3" lean-forward="false" selection-start-line="141" selection-start-column="3" selection-end-line="163" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/minor/minor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/formb/formb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="15" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="61" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/ca-results/ca-results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="97" lean-forward="false" selection-start-line="41" selection-start-column="97" selection-end-line="41" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/formb/formb.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/ca-results/ca-results.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/exam-results/exam-results.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/exam-results/exam-results.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1142">
+          <caret line="122" column="3" lean-forward="false" selection-start-line="122" selection-start-column="3" selection-end-line="122" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/exam-results/exam-results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="84" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/semester-results/semester-results.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="134" column="3" lean-forward="true" selection-start-line="56" selection-start-column="2" selection-end-line="134" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/Administration/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/semester-results/semester-results.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/transcripts/transcripts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/BaseUser/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/semester-results/semester-results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/transcripts/transcripts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuickApk/src/pages/home/home.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="148" column="3" lean-forward="false" selection-start-line="141" selection-start-column="2" selection-end-line="148" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="103" column="49" lean-forward="false" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/transcripts/transcripts.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="99" column="43" lean-forward="false" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/home/home.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/pages/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HTAPK/H3TC_APK/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/Credentials">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/Africashine-systems/Projects/Sos_Transfusion/News/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/Africashine-systems/Projects/Sos_Transfusion/Forum/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/Africashine-systems/Projects/SAT/SAT/Forum/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1202">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/Forum/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="129" column="90" lean-forward="false" selection-start-line="129" selection-start-column="68" selection-end-line="129" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/HT3C_App/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/BaseUser/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/templates/home/scroll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/Africashine-systems/Projects/New_Sos_Alert_Transfusion/new_sos/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="595" column="20" lean-forward="false" selection-start-line="595" selection-start-column="20" selection-end-line="595" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Pro/HTTC Students App/HT3C_App/HT3C/HT3C_App/templates/my_results/includes/partial_major_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

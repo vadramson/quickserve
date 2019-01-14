@@ -1,0 +1,25 @@
+{% for order in orders %}
+  <tr>
+    <td>{{ forloop.counter }}</td>
+    <td>{{ order.product }}</td>
+    <td>{{ order.product.price }} F CFA</td>
+    <td>{{ order.quantity }}</td>
+    <td>{{ order.amount }} F CFA</td>
+    <td>{{ order.orderNumber }}</td>
+    <td>{{ order.dateOp }}</td>
+    <td>{{ order.status }}</td>
+  </tr>
+
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">Product Cart is Currently Empty!</td>
+  </tr>
+{% endfor %}
+<tr>
+    <td colspan="3"> Total Amount</td>
+    <td colspan="">{{ total }} F CFA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>

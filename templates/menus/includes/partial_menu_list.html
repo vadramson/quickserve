@@ -1,0 +1,25 @@
+{% for menu in menus %}
+  <tr>
+{#    <td>{{ menu.id }}</td>#}
+    <td>{{ menu.name }}</td>
+    <td>{{ menu.typeMenu }}</td>  
+    <td >
+      <button type="button"
+              class="btn btn-warning btn-xs js-update-menu"
+              data-url="{% url 'menu_update' menu.id %}"
+              data-toggle="tooltip" data-placement="top" title="Edit menu">
+        <span class="glyphicon glyphicon-pencil"></span> Edit
+      </button>
+      <button type="button"
+              class="btn btn-danger btn-xs js-delete-menu"
+              data-url="{% url 'menu_delete' menu.id %}"
+              data-toggle="tooltip" data-placement="top" title="Delete menu">
+        <span class="glyphicon glyphicon-trash"></span> Delete
+      </button>
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No menu Yet!</td>
+  </tr>
+{% endfor %}

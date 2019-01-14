@@ -1,0 +1,29 @@
+
+{% load widget_tweaks %}
+
+
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ department }}">Department Name</label>
+    {{ form.department|attr:"name : department"|attr:"placeholder : Enter Department Name"|attr:"class : form-control"|attr:"id : department" }}
+    <p class="help-block">{{ form.department.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ dptSpecification }}">Department Specifications</label>
+    {{ form.dptSpecification|attr:"name : dptSpecification"|attr:"placeholder : Enter Department Specifications"|attr:"class : form-control"|attr:"id : dptSpecification" }}
+    <p class="help-block">{{ form.dptSpecification.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ dptMinsalary }}">Minimum Salary</label>
+    {{ form.dptMinsalary|attr:"name : dptMinsalary"|attr:"placeholder : Enter Department Minimum Salary"|attr:"class : form-control"|attr:"id : dptMinsalary" }}
+    <p class="help-block">{{ form.dptMinsalary.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ dptPaymentRaise }}">Department Percentage Pay Raise</label>
+    {{ form.dptPaymentRaise|attr:"name : dptPaymentRaise"|attr:"placeholder : Enter Department Percentage Pay Raise"|attr:"class : form-control"|attr:"id : dptPaymentRaise" }}
+    <p class="help-block">{{ form.dptPaymentRaise.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ dpthourlySalary }}">Department Hourly Salary</label>
+    {{ form.dpthourlySalary|attr:"name : dpthourlySalary"|attr:"placeholder : Enter Department Hourly Salary"|attr:"class : form-control"|attr:"id : dpthourlySalary" }}
+    <p class="help-block">{{ form.dpthourlySalary.errors }}</p>
+</div>

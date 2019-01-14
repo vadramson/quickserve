@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="django" name="Django">
+      <configuration>
+        <option name="rootFolder" value="$MODULE_DIR$" />
+        <option name="settingsModule" value="QuickApp/settings.py" />
+        <option name="manageScript" value="$MODULE_DIR$/manage.py" />
+        <option name="environment" value="&lt;map/&gt;" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.6.2 (C:\Users\Vadrama\AppData\Local\Programs\Python\Python36\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Sos_Project" />
+    <orderEntry type="module" module-name="Sos_Transfusion" />
+    <orderEntry type="module" module-name="SAT" />
+    <orderEntry type="module" module-name="R_and_D" />
+    <orderEntry type="module" module-name="new_sos" />
+    <orderEntry type="module" module-name="HT3C_App" />
+    <orderEntry type="module" module-name="H3TC_APK" />
+    <orderEntry type="module" module-name="H3TC_APK" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="J:/QuickApp\templates" />
+      </list>
+    </option>
+  </component>
+</module>

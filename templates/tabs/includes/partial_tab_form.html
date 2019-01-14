@@ -1,0 +1,11 @@
+
+{% load widget_tweaks %}
+
+
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ tableNum }}">Product</label>
+    {{ form.tableNum|attr:"name : tableNum"|attr:"placeholder : Enter Table Number for new Tab"|attr:"class : form-control"|attr:"id : tableNum" }}
+    <p class="help-block">{{ form.tableNum.errors }}</p>
+</div>
+<input type="hidden" name="user" value="{{user.id}}">
+<input type="hidden" name="status" value="Open">

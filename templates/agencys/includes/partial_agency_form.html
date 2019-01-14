@@ -1,0 +1,19 @@
+
+{% load widget_tweaks %}
+
+
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ agency }}">Agency Name</label>
+    {{ form.agency|attr:"name : agency"|attr:"placeholder : Enter Agency Name"|attr:"class : form-control"|attr:"id : agency" }}
+    <p class="help-block">{{ form.agency.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ agencyAddress }}">Agency Address</label>
+    {{ form.agencyAddress|attr:"name : agencyAddress"|attr:"placeholder : Enter Agency Address"|attr:"class : form-control"|attr:"id : agencyAddress" }}
+    <p class="help-block">{{ form.agencyAddress.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ agencyTelephone }}">Telephone Number</label>
+    {{ form.agencyTelephone|attr:"name : agencyTelephone"|attr:"placeholder : Enter Telephone Number"|attr:"class : form-control"|attr:"id : agencyTelephone" }}
+    <p class="help-block">{{ form.agencyTelephone.errors }}</p>
+</div>

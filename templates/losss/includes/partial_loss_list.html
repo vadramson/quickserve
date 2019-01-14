@@ -1,0 +1,28 @@
+{% for loss in losss %}
+  <tr>
+    <td>{{ loss.user }}</td>
+    <td>{{ loss.item }}</td>
+    <td>{{ loss.quantity }}</td>
+    <td>{{ loss.amount }} F CFA</td>
+    <td>{{ loss.reason }}</td>
+    <td>{{ loss.dateOp }}</td>
+    <td >
+      <button type="button"
+              class="btn btn-warning btn-xs js-update-loss"
+              data-url="{% url 'loss_update' loss.id %}"
+              data-toggle="tooltip" data-placement="top" title="Edit Loss">
+        <span class="glyphicon glyphicon-pencil"></span> Edit
+      </button>
+{#      <button type="button"#}
+{#              class="btn btn-danger btn-xs js-delete-loss"#}
+{#              data-url="{% url 'loss_delete' loss.id %}"#}
+{#              data-toggle="tooltip" data-placement="top" title="Delete Loss">#}
+{#        <span class="glyphicon glyphicon-trash"></span> Delete#}
+{#      </button>#}
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No loss Yet!</td>
+  </tr>
+{% endfor %}

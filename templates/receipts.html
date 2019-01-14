@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{#    <style>#}
+{#        .table{#}
+{#            padding: 5px;#}
+{#            text-align: center;#}
+{#            border: 2px solid saddlebrown;#}
+{#        }#}
+{#        th{#}
+{#            background-color: #66512c;#}
+{#            color: white;#}
+{#            font-weight: bold;#}
+{#            text-transform: uppercase;#}
+{#        }#}
+{#        .date{#}
+{#            float: right;#}
+{#        }#}
+{#        .row{#}
+{#            background-color: #66512c;#}             
+{#            background-image: url("prints/includes/logo3.png");#}
+{#        }#}
+{#    </style>#}
+    {% load staticfiles %}
+</head>
+{#    <script> swal("Hello world!");</script>#}
+<body class="nav-md" style="background-color: #1b2834;">
+{#<img  src="{% static 'images/Sales-Receipt.png' %}" width="90%">#}
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_content">
+                {% include 'messages.html' %}
+                {% block content %}
+                {% endblock %}
+                <center>
+                    <button class="btn btn-default" onclick="window.print();"><i class="fa fa-print"></i> Print</button>
+                    <button class="btn btn-info">
+                        <i class="fa fa-print"></i> Print Invoice
+                    </button>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

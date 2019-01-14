@@ -1,0 +1,41 @@
+{% for category in categorys %}
+    <tr>
+        {#    <td>{{ category.id }}</td>#}
+        <td>{{ category.menu }}</td>
+        <td>{{ category.nameCat }}</td>
+        <td>
+            {% if category.status == "Active" %}
+                <span class="label label-success "> {{ category.status }} </span>
+            {% elif category.status != "Active" %}
+                <span class="label label-danger "> {{ category.status }} </span>
+            {% endif %}
+        </td>
+        <td>
+            <button type="button"
+                    class="btn btn-primary btn-xs js-update-category"
+                    data-url="{% url 'category_update' category.id %}"
+                    data-toggle="tooltip" data-placement="top" title="Edit category">
+                <span class="glyphicon glyphicon-pencil"></span> Edit
+            </button>
+            {% if category.status != "Active" %}
+                <button type="button"
+                        class="btn btn-success btn-xs js-activate-category"
+                        data-url="{% url 'category_activate' category.id %}"
+                        data-toggle="tooltip" data-placement="top" title="Activate Category">
+                    <span class="glyphicon glyphicon-trash"></span> Activate Category
+                </button>
+            {% elif category.status == "Active" %}
+                <button type="button"
+                        class="btn btn-danger btn-xs js-deactivate-category"
+                        data-url="{% url 'category_deactivate' category.id %}"
+                        data-toggle="tooltip" data-placement="top" title="Deactivate Category">
+                    <span class="glyphicon glyphicon-trash"></span> Deactivate Category
+                </button>
+            {% endif %}
+        </td>
+    </tr>
+{% empty %}
+    <tr>
+        <td colspan="8" class="text-center bg-warning">No category Yet!</td>
+    </tr>
+{% endfor %}

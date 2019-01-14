@@ -1,0 +1,27 @@
+{% for bonus in bonuss %}
+  <tr>
+    <td>{{ bonus.user}}</td>
+    <td>{{ bonus.amount }}</td>
+    <td>{{ bonus.reason }}</td>
+    <td>{{ bonus.empCode }}</td>
+    <td>{{ bonus.dateBonus }}</td>
+    <td >
+      <button type="button"
+              class="btn btn-warning btn-xs js-update-bonus"
+              data-url="{% url 'bonus_update' bonus.id %}"
+              data-toggle="tooltip" data-placement="top" title="Edit Bonus">
+        <span class="glyphicon glyphicon-pencil"></span> Edit
+      </button>
+      <button type="button"
+              class="btn btn-danger btn-xs js-delete-bonus"
+              data-url="{% url 'bonus_delete' bonus.id %}"
+              data-toggle="tooltip" data-placement="top" title="Delete Bonus">
+        <span class="glyphicon glyphicon-trash"></span> Delete
+      </button>
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No bonus Yet!</td>
+  </tr>
+{% endfor %}

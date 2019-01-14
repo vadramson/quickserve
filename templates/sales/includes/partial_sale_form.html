@@ -1,0 +1,23 @@
+
+{% load widget_tweaks %}
+
+
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ paid }}"> Amount to be paid</label>
+    {{ form.paid|attr:"name : paid"|attr:"placeholder : Enter Amount to be paid"|attr:"class : form-control"|attr:"id : paid"|attr:"required : required"|attr:"min : 1" }}
+    <p class="help-block">{{ form.paid.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ customer }}">Customer Name</label>
+    {{ form.customer|attr:"name : customer"|attr:"placeholder : Enter customer name "|attr:"class : form-control"|attr:"id : customer"|attr:"required : required" }}
+    <p class="help-block">{{ form.customer.errors }}</p>
+</div>
+{#<div class="form-group{% if field.errors %} has-error{% endif %}">#}
+{#    <label for="{{ custmerSign }}">Customer Signature</label>#}
+{#    {{ form.custmerSign|attr:"name : custmerSign"|attr:"placeholder : custmerSign"|attr:"class : form-control"|attr:"id : custmerSign"|attr:"required : required" }}#}
+{#    <p class="help-block">{{ form.custmerSign.errors }}</p>#}
+{#</div>#}
+
+
+<input type="hidden" name="user" value="{{ user.id }}">
+<input type="hidden" name="status" value="Closed">

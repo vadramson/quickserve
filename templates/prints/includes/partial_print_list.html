@@ -1,0 +1,23 @@
+{% for print in prints %}
+  <tr>
+    <td>{{ forloop.counter }}</td>
+    <td>{{ print.orderNumber }}</td>
+    <td>{{ print.dateOp }}</td>
+    <td>{{ print.status }}</td>
+    <td >
+     <a href="{% url 'print_list_pdf' print.orderNumber %}" target="_blank">
+      <button type="button"
+              class="btn btn-success btn-xs"
+              data-url="{% url 'print_list_pdf' print.orderNumber %}"
+              data-toggle="tooltip" data-placement="top" title="Print Receipts">
+        <span class="fa fa-print"></span> Print
+      </button>
+     </a>
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No Open Tabs!</td>
+  </tr>
+{% endfor %}
+

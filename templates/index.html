@@ -1,0 +1,783 @@
+{% if user.is_authenticated %}
+    {% load staticfiles %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>
+            {% if user.profile.role == 1 %}
+                CEO
+            {% elif user.profile.role == 2 %}
+                Quick Serve  ADMIN
+            {% elif user.profile.role == 3 %}
+                Quick Serve MANAGER
+            {% elif user.profile.role == 4 %}
+                Quick Serve PURCHASE
+            {% elif user.profile.role == 5 %}
+                Quick Serve CASHIER
+            {% elif user.profile.role == 6 %}
+                Quick Serve AVARIS
+            {% elif user.profile.role == 7 %}
+                Quick Serve HUMAN RESOURCE
+            {% elif user.profile.role == 8 %}
+                Quick Serve OPERATION
+            {% elif user.profile.role == 9 %}
+                Quick Serve WAITRESS
+            {% endif %}
+            {{ user.username }}
+        </title>
+
+        <!-- Bootstrap -->
+        <link href="{% static 'vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="{% static  'vendors/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+        <!-- NProgress -->
+        <link href="{% static 'vendors/nprogress/nprogress.css' %}" rel="stylesheet">
+        <link href="{% static 'src/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'vendors/iCheck/skins/flat/orange.css' %}" rel="stylesheet">
+    <!-- Datatables -->
+        <link href="{% static 'vendors/datatables.net-bs/css/dataTables.bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'vendors/cropper/dist/cropper.min.css'%}" rel="stylesheet">
+        <!-- Custom Theme Style -->
+        <link href="{% static 'build/css/custom.min.css' %}" rel="stylesheet">
+        <link href="{% static 'alerts/sweetalert.css' %}" rel="stylesheet">
+        <link href="{% static 'google/google.css' %}" rel="stylesheet">
+
+
+        <style>
+            .fin{
+                font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+                color: white;
+            }
+            .fin:hover{
+                font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+                color: white;
+                cursor: default;
+            }
+        </style>
+
+    </head>
+{#    <script> swal("Hello world!");</script>#}
+    <body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="{% url 'home' %}" class="site_title"> <img width="200px;"
+                                                                      src="{% static 'images/logo3.png' %}"> </a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile">
+                        <div class="profile_pic">
+                            <img src="{{ user.profile.picture.url }}" alt="{{ user.username }}"
+                                 class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome, </span>
+                            <h2>{{ user.get_full_name|default:user.username }}</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br/>
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>
+                                {% if user.profile.role == 1 %}
+                                    CEO
+                                {% elif user.profile.role == 2 %}
+                                    Quick Serve  ADMIN
+                                {% elif user.profile.role == 3 %}
+                                    Quick Serve MANAGER
+                                {% elif user.profile.role == 4 %}
+                                    Quick Serve PURCHASE
+                                {% elif user.profile.role == 5 %}
+                                    Quick Serve CASHIER
+                                {% elif user.profile.role == 6 %}
+                                    Quick Serve AVARIS
+                                {% elif user.profile.role == 7 %}
+                                    Quick Serve HUMAN RESOURCE
+                                {% elif user.profile.role == 8 %}
+                                    Quick Serve OPERATION
+                                {% elif user.profile.role == 9 %}
+                                    Quick Serve WAITRESS
+                                {% endif %}
+                            </h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-home"></i> Organizational <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="{% url 'agency_list' %}">Agencies</a></li>
+                                        <li><a href="{% url 'department_list' %}">Departments</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-user"></i> Employees <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="{% url 'createUser' %}">Add User</a></li>
+                                        <li><a href="{% url 'user_list' %}">View User</a></li>
+                                        <li><a href="{% url 'bonus_list' %}">Add Bonus</a></li>
+                                        <li><a href="{% url 'deduction_list' %}">Add Deductions</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-desktop"></i> Products <span
+                                        class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="{% url 'menu_list' %}">Menu</a></li>
+                                        <li><a href="{% url 'category_list' %}">Categories</a></li>
+                                        <li><a href="{% url 'product_list' %}">Products</a></li>
+                                        <li><a href="{% url 'purchase_list' %}">Purchases</a></li>
+                                        <li><a href="{% url 'avaris_list' %}">Avaris</a></li>
+                                        <li><a href="{% url 'stock_list' %}">Take Stock</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-table"></i> Operational <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="{% url 'expense_list' %}">Expenses</a></li>
+                                        <li><a href="{% url 'loss_list' %}">Losses</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-bar-chart-o"></i> Orders and Sales<span
+                                        class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="{% url 'tab_list' user.id %}">Open Tabs</a></li>
+                                        <li><a href="{% url 'tab_list_closed' user.id %}">Closed Tabs</a></li>
+                                        <li><a href="{% url 'print_list' %}">Waiting Receipts</a></li>
+                                        <li><a href="{% url 'printed_list_msg' %}">Printed Receipts</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-clone"></i>HR Attendance<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="{% url 'attendance_list' %}">Attendance Sheet</a></li>
+                                        <li><a href="fixed_footer.html">Payroll Sheet</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_section">
+                            <h3>Quick Serve Reports</h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-bug"></i> General Report<span
+                                        class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="{% url 'reports' %}">Usage Reports</a></li>
+                                        <li><a href="{% url 'product_stat' %}">Products</a></li>
+                                        <li><a href="{% url 'cash_out_statistic' %}">Cash Outflows</a></li>
+                                        <li><a href="{% url 'purchase_statistic' %}">Purchases</a></li>
+                                        <li><a href="profile.html">Profile</a></li>
+                                    </ul>
+                                </li>
+{#                                <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>#}
+{#                                    <ul class="nav child_menu">#}
+{#                                        <li><a href="page_403.html">403 Error</a></li>#}
+{#                                        <li><a href="page_404.html">404 Error</a></li>#}
+{#                                        <li><a href="page_500.html">500 Error</a></li>#}
+{#                                        <li><a href="plain_page.html">Plain Page</a></li>#}
+{#                                        <li><a href="login.html">Login Page</a></li>#}
+{#                                        <li><a href="pricing_tables.html">Pricing Tables</a></li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span#}
+{#                                        class="fa fa-chevron-down"></span></a>#}
+{#                                    <ul class="nav child_menu">#}
+{#                                        <li><a href="#level1_1">Level One</a>#}
+{#                                        <li><a>Level One<span class="fa fa-chevron-down"></span></a>#}
+{#                                            <ul class="nav child_menu">#}
+{#                                                <li class="sub_menu"><a href="level2.html">Level Two</a>#}
+{#                                                </li>#}
+{#                                                <li><a href="#level2_1">Level Two</a>#}
+{#                                                </li>#}
+{#                                                <li><a href="#level2_2">Level Two</a>#}
+{#                                                </li>#}
+{#                                            </ul>#}
+{#                                        </li>#}
+{#                                        <li><a href="#level1_2">Level One</a>#}
+{#                                        </li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span#}
+{#                                        class="label label-success pull-right">Coming Soon</span></a></li>#}
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <img src="{{ user.profile.picture.url }}"
+                                         alt="{{ user.username }}">{{ user.get_full_name|default:user.username }}
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="{% url 'home' %}"> Profile</a></li>
+                                    {% if user.is_authenticated %}
+                                        <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out pull-right"></i> Log
+                                            Out</a></li>
+                                    {% endif %}
+                                </ul>
+                            </li>
+
+                            <li role="presentation" class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="badge bg-green">{{ pdtCount }}</span>
+                                </a>
+                                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                    {% for pdt in pdtLess %}
+
+                                        <li>
+                                            <a>
+{{ pdt.namePdt }}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+
+                                    <li>
+                                        <div class="text-center">
+                                            <a>
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="clearfix"></div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_content">
+                                    {% include 'messages.html' %}
+                                    {% block content %}
+                                    {% endblock %}
+{#                                    {{ message }}#}
+                                    Proudly Powered By Vadramson Solutions ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    Academic Internship 2016 / 2017 <a href="#">Vadrama NDISANG NGYIBI</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{% static 'vendors/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'alerts/sweetalert.min.js' %}"></script>
+{#    <script src="{% static 'src/js/jquery-3.1.1.min.js' %}"></script>#}
+
+{#    Start Work flow Scripts#}
+
+    <script src="{% static 'src/js/modal.js' %}"></script>
+    <script src="{% static 'src/js/pagency.js' %}"></script>
+    <script src="{% static 'src/js/department.js' %}"></script>
+    <script src="{% static 'src/js/profile.js' %}"></script>
+    <script src="{% static 'src/js/menu.js' %}"></script>
+    <script src="{% static 'src/js/category.js' %}"></script>
+    <script src="{% static 'src/js/product.js' %}"></script>
+    <script src="{% static 'src/js/expense.js' %}"></script>
+    <script src="{% static 'src/js/loss.js' %}"></script>
+    <script src="{% static 'src/js/bonus.js' %}"></script>
+    <script src="{% static 'src/js/deduction.js' %}"></script>
+    <script src="{% static 'src/js/purchase.js' %}"></script>
+    <script src="{% static 'src/js/avaris.js' %}"></script>
+    <script src="{% static 'src/js/stock.js' %}"></script>
+    <script src="{% static 'src/js/attendance.js' %}"></script>
+    <script src="{% static 'src/js/order.js' %}"></script>
+    <script src="{% static 'src/js/tab.js' %}"></script>
+    <script src="{% static 'src/js/sale.js' %}"></script>
+
+{#    Charts data JavaAcripts files here#}
+
+    <script src="{% static 'src/js/Chart.bundle.js' %}"></script>
+
+    <script src="{% static 'src/js/reportsData.js' %}"></script>
+
+
+    {#    End Work flow Scripts#}
+
+    <!-- Bootstrap -->
+{#     <script src="{% static 'src/jquery-3.1.1.min.js' %}"></script>#}
+    <script src="{% static 'vendors/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+     <script src="{% static 'src/extraJS.js' %}"></script>
+    <script src="{% static 'src/cropper.min.js' %}"></script>
+    <!-- FastClick -->
+    <script src="{% static 'vendors/fastclick/lib/fastclick.js' %}"></script>
+    <!-- NProgress -->
+    <script src="{% static 'vendors/nprogress/nprogress.js' %}"></script>
+
+    <script src="{% static 'vendors/raphael/raphael.min.js' %}"></script>
+
+    <script src="{% static 'vendors/morris.js/morris.min.js' %}"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="{% static 'vendors/bootstrap-progressbar/bootstrap-progressbar.min.js' %}"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="{% static 'production/js/moment/moment.min.js' %}"></script>
+    <script src="{% static 'production/js/datepicker/daterangepicker.js' %}"></script>
+    <script src="{% static 'src/bootstrap-datetimepicker.min.js' %}"></script>
+    <script src="{% static 'src/moment.min.js' %}"></script>
+    <script src="{% static 'src/extraJS.js' %}"></script>
+    <script src="{% static 'src/cropper.min.js' %}"></script>
+    <script src="{% static 'vendors/cropper/dist/cropper.min.js' %}"></script>
+
+    <script src="{% static 'vendors/iCheck/icheck.min.js' %}"></script>
+    <!-- Datatables -->
+    <script src="{% static 'vendors/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-bs/js/dataTables.bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.flash.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.html5.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.print.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-keytable/js/dataTables.keyTable.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-scroller/js/datatables.scroller.min.js' %}"></script>
+    <script src="{% static 'vendors/jszip/dist/jszip.min.js' %}"></script>
+    <script src="{% static 'vendors/pdfmake/build/pdfmake.min.js' %}"></script>
+    <script src="{% static 'vendors/pdfmake/build/vfs_fonts.js' %}"></script>
+     <!-- jQuery Smart Wizard -->
+    <script src="{% static 'vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js' %}"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="{% static 'build/js/custom.min.js' %}"></script>
+
+ <!-- Cropper -->
+{#    <script>#}
+{#      $(document).ready(function() {#}
+{#        var $image = $('#image');#}
+{#        var $download = $('#download');#}
+{#        var $dataX = $('#dataX');#}
+{#        var $dataY = $('#dataY');#}
+{#        var $dataHeight = $('#dataHeight');#}
+{#        var $dataWidth = $('#dataWidth');#}
+{#        var $dataRotate = $('#dataRotate');#}
+{#        var $dataScaleX = $('#dataScaleX');#}
+{#        var $dataScaleY = $('#dataScaleY');#}
+{#        var options = {#}
+{#              aspectRatio: 16 / 9,#}
+{#              preview: '.img-preview',#}
+{#              crop: function (e) {#}
+{#                $dataX.val(Math.round(e.x));#}
+{#                $dataY.val(Math.round(e.y));#}
+{#                $dataHeight.val(Math.round(e.height));#}
+{#                $dataWidth.val(Math.round(e.width));#}
+{#                $dataRotate.val(e.rotate);#}
+{#                $dataScaleX.val(e.scaleX);#}
+{#                $dataScaleY.val(e.scaleY);#}
+{#              }#}
+{#            };#}
+{##}
+{##}
+{#        // Tooltip#}
+{#        $('[data-toggle="tooltip"]').tooltip();#}
+{##}
+{##}
+{#        // Cropper#}
+{#        $image.on({#}
+{#          'build.cropper': function (e) {#}
+{#            console.log(e.type);#}
+{#          },#}
+{#          'built.cropper': function (e) {#}
+{#            console.log(e.type);#}
+{#          },#}
+{#          'cropstart.cropper': function (e) {#}
+{#            console.log(e.type, e.action);#}
+{#          },#}
+{#          'cropmove.cropper': function (e) {#}
+{#            console.log(e.type, e.action);#}
+{#          },#}
+{#          'cropend.cropper': function (e) {#}
+{#            console.log(e.type, e.action);#}
+{#          },#}
+{#          'crop.cropper': function (e) {#}
+{#            console.log(e.type, e.x, e.y, e.width, e.height, e.rotate, e.scaleX, e.scaleY);#}
+{#          },#}
+{#          'zoom.cropper': function (e) {#}
+{#            console.log(e.type, e.ratio);#}
+{#          }#}
+{#        }).cropper(options);#}
+{##}
+{##}
+{#        // Buttons#}
+{#        if (!$.isFunction(document.createElement('canvas').getContext)) {#}
+{#          $('button[data-method="getCroppedCanvas"]').prop('disabled', true);#}
+{#        }#}
+{##}
+{#        if (typeof document.createElement('cropper').style.transition === 'undefined') {#}
+{#          $('button[data-method="rotate"]').prop('disabled', true);#}
+{#          $('button[data-method="scale"]').prop('disabled', true);#}
+{#        }#}
+{##}
+{##}
+{#        // Download#}
+{#        if (typeof $download[0].download === 'undefined') {#}
+{#          $download.addClass('disabled');#}
+{#        }#}
+{##}
+{##}
+{#        // Options#}
+{#        $('.docs-toggles').on('change', 'input', function () {#}
+{#          var $this = $(this);#}
+{#          var name = $this.attr('name');#}
+{#          var type = $this.prop('type');#}
+{#          var cropBoxData;#}
+{#          var canvasData;#}
+{##}
+{#          if (!$image.data('cropper')) {#}
+{#            return;#}
+{#          }#}
+{##}
+{#          if (type === 'checkbox') {#}
+{#            options[name] = $this.prop('checked');#}
+{#            cropBoxData = $image.cropper('getCropBoxData');#}
+{#            canvasData = $image.cropper('getCanvasData');#}
+{##}
+{#            options.built = function () {#}
+{#              $image.cropper('setCropBoxData', cropBoxData);#}
+{#              $image.cropper('setCanvasData', canvasData);#}
+{#            };#}
+{#          } else if (type === 'radio') {#}
+{#            options[name] = $this.val();#}
+{#          }#}
+{##}
+{#          $image.cropper('destroy').cropper(options);#}
+{#        });#}
+{##}
+{##}
+{#        // Methods#}
+{#        $('.docs-buttons').on('click', '[data-method]', function () {#}
+{#          var $this = $(this);#}
+{#          var data = $this.data();#}
+{#          var $target;#}
+{#          var result;#}
+{##}
+{#          if ($this.prop('disabled') || $this.hasClass('disabled')) {#}
+{#            return;#}
+{#          }#}
+{##}
+{#          if ($image.data('cropper') && data.method) {#}
+{#            data = $.extend({}, data); // Clone a new one#}
+{##}
+{#            if (typeof data.target !== 'undefined') {#}
+{#              $target = $(data.target);#}
+{##}
+{#              if (typeof data.option === 'undefined') {#}
+{#                try {#}
+{#                  data.option = JSON.parse($target.val());#}
+{#                } catch (e) {#}
+{#                  console.log(e.message);#}
+{#                }#}
+{#              }#}
+{#            }#}
+{##}
+{#            result = $image.cropper(data.method, data.option, data.secondOption);#}
+{##}
+{#            switch (data.method) {#}
+{#              case 'scaleX':#}
+{#              case 'scaleY':#}
+{#                $(this).data('option', -data.option);#}
+{#                break;#}
+{##}
+{#              case 'getCroppedCanvas':#}
+{#                if (result) {#}
+{##}
+{#                  // Bootstrap's Modal#}
+{#                  $('#getCroppedCanvasModal').modal().find('.modal-body').html(result);#}
+{##}
+{#                  if (!$download.hasClass('disabled')) {#}
+{#                    $download.attr('href', result.toDataURL());#}
+{#                  }#}
+{#                }#}
+{##}
+{#                break;#}
+{#            }#}
+{##}
+{#            if ($.isPlainObject(result) && $target) {#}
+{#              try {#}
+{#                $target.val(JSON.stringify(result));#}
+{#              } catch (e) {#}
+{#                console.log(e.message);#}
+{#              }#}
+{#            }#}
+{##}
+{#          }#}
+{#        });#}
+{##}
+{#        // Keyboard#}
+{#        $(document.body).on('keydown', function (e) {#}
+{#          if (!$image.data('cropper') || this.scrollTop > 300) {#}
+{#            return;#}
+{#          }#}
+{##}
+{#          switch (e.which) {#}
+{#            case 37:#}
+{#              e.preventDefault();#}
+{#              $image.cropper('move', -1, 0);#}
+{#              break;#}
+{##}
+{#            case 38:#}
+{#              e.preventDefault();#}
+{#              $image.cropper('move', 0, -1);#}
+{#              break;#}
+{##}
+{#            case 39:#}
+{#              e.preventDefault();#}
+{#              $image.cropper('move', 1, 0);#}
+{#              break;#}
+{##}
+{#            case 40:#}
+{#              e.preventDefault();#}
+{#              $image.cropper('move', 0, 1);#}
+{#              break;#}
+{#          }#}
+{#        });#}
+{##}
+{#        // Import image#}
+{#        var $inputImage = $('#inputImage');#}
+{#        var URL = window.URL || window.webkitURL;#}
+{#        var blobURL;#}
+{##}
+{#        if (URL) {#}
+{#          $inputImage.change(function () {#}
+{#            var files = this.files;#}
+{#            var file;#}
+{##}
+{#            if (!$image.data('cropper')) {#}
+{#              return;#}
+{#            }#}
+{##}
+{#            if (files && files.length) {#}
+{#              file = files[0];#}
+{##}
+{#              if (/^image\/\w+$/.test(file.type)) {#}
+{#                blobURL = URL.createObjectURL(file);#}
+{#                $image.one('built.cropper', function () {#}
+{##}
+{#                  // Revoke when load complete#}
+{#                  URL.revokeObjectURL(blobURL);#}
+{#                }).cropper('reset').cropper('replace', blobURL);#}
+{#                $inputImage.val('');#}
+{#              } else {#}
+{#                window.alert('Please choose an image file.');#}
+{#              }#}
+{#            }#}
+{#          });#}
+{#        } else {#}
+{#          $inputImage.prop('disabled', true).parent().addClass('disabled');#}
+{#        }#}
+{#      });#}
+{#    </script>#}
+    <!-- /Cropper -->
+
+    <!-- Datatables -->
+    <script>
+      $(document).ready(function() {
+        var handleDataTableButtons = function() {
+          if ($("#datatable-buttons").length) {
+            $("#datatable-buttons").DataTable({
+              dom: "Bfrtip",
+              buttons: [
+                {
+                  extend: "copy",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "csv",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "excel",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "pdfHtml5",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "print",
+                  className: "btn-sm"
+                },
+              ],
+              responsive: true
+            });
+          }
+        };
+
+        TableManageButtons = function() {
+          "use strict";
+          return {
+            init: function() {
+              handleDataTableButtons();
+            }
+          };
+        }();
+
+        $('#datatable').dataTable();
+
+        $('#datatable-keytable').DataTable({
+          keys: true
+        });
+
+        $('#datatable-responsive').DataTable();
+
+        $('#datatable-scroller').DataTable({
+          ajax: "js/datatables/json/scroller-demo.json",
+          deferRender: true,
+          scrollY: 380,
+          scrollCollapse: true,
+          scroller: true
+        });
+
+        $('#datatable-fixed-header').DataTable({
+          fixedHeader: true
+        });
+
+        var $datatable = $('#datatable-checkbox');
+
+        $datatable.dataTable({
+          'order': [[ 1, 'asc' ]],
+          'columnDefs': [
+            { orderable: false, targets: [0] }
+          ]
+        });
+        $datatable.on('draw.dt', function() {
+          $('input').iCheck({
+            checkboxClass: 'icheckbox_flat-green'
+          });
+        });
+
+        TableManageButtons.init();
+      });
+    </script>
+
+    <!-- /Datatables -->
+     <script>
+      $(document).ready(function() {
+        $('#wizard').smartWizard();
+
+        $('#wizard_verticle').smartWizard({
+          transitionEffect: 'fade'
+        });
+
+        $('.buttonNext').addClass('btn btn-success');
+        $('.buttonPrevious').addClass('btn btn-primary');
+        $('.buttonFinish').addClass('fin');
+      });
+    </script>
+
+   <script>
+
+    $('#time').datetimepicker({
+
+        //format: 'DD:MM:YYYY'
+		format: 'YYYY-MM-DD'
+
+    });
+
+    </script>
+
+    <script>
+      $(function() {
+        Morris.Bar({
+          element: 'graph_bar',
+          data: [
+            { "period": "Jan", "Hours worked": 80 },
+            { "period": "Feb", "Hours worked": 125 },
+            { "period": "Mar", "Hours worked": 176 },
+            { "period": "Apr", "Hours worked": 224 },
+            { "period": "May", "Hours worked": 265 },
+            { "period": "Jun", "Hours worked": 314 },
+            { "period": "Jul", "Hours worked": 347 },
+            { "period": "Aug", "Hours worked": 287 },
+            { "period": "Sep", "Hours worked": 240 },
+            { "period": "Oct", "Hours worked": 211 }
+          ],
+          xkey: 'period',
+          hideHover: 'auto',
+          barColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
+          ykeys: ['Hours worked', 'sorned'],
+          labels: ['Hours worked', 'SORN'],
+          xLabelAngle: 60,
+          resize: true
+        });
+
+        $MENU_TOGGLE.on('click', function() {
+          $(window).resize();
+        });
+      });
+    </script>
+
+
+
+
+
+    </body>
+    </html>
+{% endif %}

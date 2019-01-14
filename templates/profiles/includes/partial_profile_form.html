@@ -1,0 +1,29 @@
+
+{% load widget_tweaks %}
+
+
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ username }}">Username Name</label>
+    {{ form.username|attr:"name : username"|attr:"placeholder : Not User's Real Name"|attr:"class : form-control"|attr:"id : username" }}
+    <p class="help-block">{{ form.username.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ first_name }}">First Name</label>
+    {{ form.first_name|attr:"name : first_name"|attr:"placeholder : Enter First Name"|attr:"class : form-control"|attr:"id : first_name" }}
+    <p class="help-block">{{ form.first_name.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ last_name }}">Last name</label>
+    {{ form.last_name|attr:"name : last_name"|attr:"placeholder : Enter Last Name"|attr:"class : form-control"|attr:"id : last_name" }}
+    <p class="help-block">{{ form.last_name.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ email }}">User's Email</label>
+    {{ form.email|attr:"name : email"|attr:"placeholder : Enter User's Email"|attr:"class : form-control"|attr:"id : email" }}
+    <p class="help-block">{{ form.email.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ agency }}">User's Agency</label>
+    {{ extra.agency|attr:"name : agency"|attr:"placeholder : Select Users Agency"|attr:"class : form-control"|attr:"id : agency" }}
+    <p class="help-block">{{ extra.agency.errors }}</p>
+</div>

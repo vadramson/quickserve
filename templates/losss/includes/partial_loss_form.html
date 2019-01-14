@@ -1,0 +1,30 @@
+
+{% load widget_tweaks %}
+
+
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ amount }}">Loss Amount</label>
+    {{ form.amount|attr:"name : amount"|attr:"placeholder : Enter Loss Amount"|attr:"class : form-control"|attr:"id : amount" }}
+    <p class="help-block">{{ form.amount.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ reason }}">Reason for Loss</label>
+    {{ form.reason|attr:"name : reason"|attr:"placeholder : Enter Reason for Loss"|attr:"class : form-control"|attr:"id : reason" }}
+    <p class="help-block">{{ form.reason.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ item }}">Loss Item</label>
+    {{ form.item|attr:"name : item"|attr:"placeholder : Enter Loss Item"|attr:"class : form-control"|attr:"id : item" }}
+    <p class="help-block">{{ form.item.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ quantity }}">Quantity Item</label>
+    {{ form.quantity|attr:"name : quantity"|attr:"placeholder : Enter quantity Item"|attr:"class : form-control"|attr:"id : quantity" }}
+    <p class="help-block">{{ form.quantity.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ dateOp }}">Date of Loss</label>
+    {{ form.dateOp|attr:"name : dateOp"|attr:"placeholder : Enter Date of Loss"|attr:"class : form-control"|attr:"id : time" }}
+    <p class="help-block">{{ form.dateOp.errors }}</p>
+</div>
+<input type="hidden" name="user" value="{{ user.id }}">

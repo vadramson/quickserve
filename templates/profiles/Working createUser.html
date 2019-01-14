@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+{% block content %}
+    <h2>Sign up</h2>
+    {% load widget_tweaks %}
+
+    <h2>Register New User</h2>
+    <!-- Tabs -->
+
+     <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% for field in form %}
+      <p>
+        {{ field.label_tag }}<br>
+        {{ field }}
+        {% if field.help_text %}
+          <small style="color: grey">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+    {% for field in extra %}
+      <p>
+        {{ field.label_tag }}<br>
+        {{ field }}
+        {% if field.help_text %}
+          <small style="color: grey">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+{#     <label>Role Of User</label>#}
+{#      <select class="form-control" name="role">#}
+{#        <option value="1"> Student </option>#}
+{#        <option value="2"> Teacher </option>#}
+{#        <option value="3"> Supervisor </option>#}
+{#      </select>#}
+    <button type="submit">Add User</button>
+  </form>
+
+{% endblock %}

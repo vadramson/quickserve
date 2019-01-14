@@ -1,0 +1,111 @@
+{% extends 'receipts.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="x_panel">
+            <div class="x_content">
+                <section class="content invoice">
+                    <!-- title row -->
+                    <div class="row">
+                        <div class="col-xs-12 invoice-header">
+                            <h1>
+                                <img style="border-radius: 20px;" width="80px" height="80px" src="{% static 'images/the real mc logo.jpg' %}"> Invoice.
+                                 {% for c in sales %}
+                                  <small class="date">Date: {{ c.salesDate }}</small>
+                                {% endfor %}
+                            </h1>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- info row -->
+                    <div class="row invoice-info">
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="col-sm-4 invoice-col">
+                                    From
+                                    <address>
+                                        <strong>Magic City Sports Cafe.</strong>
+                                        <br>Shell NSIMEYONG
+                                        <br>Younde Cameroun
+                                        <br>Phone: (+ 237) 695 335 910
+                                        <br>Email: info@magiccity.com
+                                    </address>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="col-sm-4 invoice-col">
+                                    Customer:
+                                    <address>
+                                        {% for c in sales %}
+                                            <strong> {{ c.customer }} </strong>
+                                        {% endfor %}
+                                    </address>
+                                    Amount:
+                                    <address>
+                                        {% for cash in total %}
+                                            <strong> {{ cash.money }} </strong>
+                                        {% endfor %}
+                                    </address>
+                                </div>
+                            </td>
+                            <td>
+                                {% for c in sales %}
+                                    <div class="col-sm-4 invoice-col">
+                                        <b>Invoice # {{ c.invoiceNumber }}</b>
+                                        <br>
+                                        <br>
+                                        <b>Order ID: </b> {{ c.invoiceNumber }}
+                                        <br>
+                                        <b>Payment Due:</b> {{ c.salesDate }}
+                                        <br>
+                                        <b>Waitress: </b> {{ c.user }}
+                                    </div>
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- /.row -->
+
+                    <!-- Table row -->
+                    <div class="row">
+                        <div class="col-xs-12 table">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Product</th>
+                                    <th>Qty.</th>
+                                    <th>Price F CFC</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for order in orders %}
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{ order.product }}</td>
+                                    <td>{{ order.quantity }}</td>
+                                    <td>{{ order.product.price }}</td>
+                                    <td>{{ order.amount }}</td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                   Proudly Powered By Vadramson Solutions's Quick Serve
+                  <img  src="{% static 'images/logo3.png' %}" style="float: right;">
+                  <img src="logo3.png">
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% for expense in expenses %}
+  <tr>
+    <td>{{ expense.user }}</td>
+    <td>{{ expense.amount }} F CFA</td>
+    <td>{{ expense.reason }}</td>
+    <td>{{ expense.dateExp }}</td>
+    <td >
+      <button type="button"
+              class="btn btn-warning btn-xs js-update-expense"
+              data-url="{% url 'expense_update' expense.id %}"
+              data-toggle="tooltip" data-placement="top" title="Edit Expense">
+        <span class="glyphicon glyphicon-pencil"></span> Edit
+      </button>
+{#      <button type="button"#}
+{#              class="btn btn-danger btn-xs js-delete-expense"#}
+{#              data-url="{% url 'expense_delete' expense.id %}"#}
+{#              data-toggle="tooltip" data-placement="top" title="Delete Expense">#}
+{#        <span class="glyphicon glyphicon-trash"></span> Delete#}
+{#      </button>#}
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No expense Yet!</td>
+  </tr>
+{% endfor %}

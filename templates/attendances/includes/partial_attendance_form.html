@@ -1,0 +1,31 @@
+
+{% load widget_tweaks %}
+
+
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ category }}">Category</label>
+    {{ form.category|attr:"name : category"|attr:"placeholder : Enter Department Name"|attr:"class : form-control"|attr:"id : category" }}
+    <p class="help-block">{{ form.category.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ namePdt }}">Attendance Name</label>
+    {{ form.namePdt|attr:"name : namePdt"|attr:"placeholder : Enter name of product"|attr:"class : form-control"|attr:"id : namePdtprice" }}
+    <p class="help-block">{{ form.namePdt.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ price }}">Saling Price</label>
+    {{ form.price|attr:"name : price"|attr:"placeholder : Enter Saling Price"|attr:"class : form-control"|attr:"id : price" }}
+    <p class="help-block">{{ form.price.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ quantity }}">Original Quantity</label>
+    {{ form.quantity|attr:"name : quantity"|attr:"placeholder : Enter original Attendance Quantity"|attr:"class : form-control"|attr:"id : quantity" }}
+    <p class="help-block">{{ form.quantity.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ minimum }}">Minimum Quantity</label>
+    {{ form.minimum|attr:"name : minimum"|attr:"placeholder : Enter Minimum Quantity before Alert"|attr:"class : form-control"|attr:"id : minimum" }}
+    <p class="help-block">{{ form.minimum.errors }}</p>
+</div>
+<input type="hidden" name="user" value="{{user.id}}">
+<input type="hidden" name="status" value="Active">

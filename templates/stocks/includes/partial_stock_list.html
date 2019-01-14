@@ -1,0 +1,22 @@
+{% for stock in stocks %}
+  <tr>
+    <td>{{ stock.user}}</td>
+    <td>{{ stock.product }}</td>
+    <td>{{ stock.quantity }}</td>
+    <td>{{ stock.stockType }}</td>
+    <td>{{ stock.dateStock }}</td>
+    <td >
+      <button type="button"
+              class="btn btn-danger btn-xs js-create-stocks"
+              data-url="{% url 'stock_create'  %}"
+{#              data-url="{% url 'stock_create' stock.id %}"#}
+              data-toggle="tooltip" data-placement="top" title="View Stock">
+        <span class="glyphicon glyphicon-alert"></span> View
+      </button>
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No stock Yet!</td>
+  </tr>
+{% endfor %}

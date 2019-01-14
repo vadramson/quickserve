@@ -1,0 +1,14 @@
+
+{% load widget_tweaks %}
+
+
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ name }}">Menu Name</label>
+    {{ form.name|attr:"name : name"|attr:"placeholder : Enter Menu Name"|attr:"class : form-control"|attr:"id : name" }}
+    <p class="help-block">{{ form.name.errors }}</p>
+</div>
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ typeMenu }}">Type Of Menu</label>
+    {{ form.typeMenu|attr:"name : typeMenu"|attr:"placeholder : Enter Type of Menu"|attr:"class : form-control"|attr:"id : typeMenu" }}
+    <p class="help-block">{{ form.typeMenu.errors }}</p>
+</div>

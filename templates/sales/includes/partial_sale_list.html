@@ -1,0 +1,16 @@
+{% for sale in saless %}
+  <tr>
+    <td>{{ sale.product}}</td>
+    <td>{{ sale.product.price}}</td>
+    <td>{{ sale.quantity}}</td>
+    <td>{{ sale.amount }}</td>
+    <td>{{ sale.orderNumber }}</td>
+    <td>{{ sale.status }}</td>
+    <td>{{ sale.dateOp }}</td>
+
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No sale Yet!</td>
+  </tr>
+{% endfor %}

@@ -1,0 +1,11 @@
+
+{% load widget_tweaks %}
+
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    <label for="{{ stockType }}">Reason For Taking Stock Now</label>
+    {{ form.stockType|attr:"name : stockType"|attr:"placeholder : Enter Reason For Taking Stock Now"|attr:"class : form-control"|attr:"id : stockType"|attr:"required : required"}}
+    <p class="help-block">{{ form.stockType.errors }}</p>
+</div>
+
+<input type="hidden" name="user" value="{{ user.id }}">
+

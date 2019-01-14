@@ -1,0 +1,23 @@
+{% for purchase in purchases %}
+  <tr>
+    <td>{{ purchase.user }}</td>
+    <td>{{ purchase.product }}</td>
+    <td>{{ purchase.quantity }}</td>
+    <td>{{ purchase.amount }}</td>
+{#    <td>{{ purchase.justification }}</td>#}
+    <td>{{ purchase.dateOp }}</td>
+    <td >
+      <button type="button"
+              class="btn btn-warning btn-xs js-update-purchase"
+              data-url="{% url 'purchase_update' purchase.id %}"
+              data-toggle="tooltip" data-placement="top" title="Edit Purchase">
+        <span class="glyphicon glyphicon-pencil"></span> Edit
+      </button>
+
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No Purchases Yet!</td>
+  </tr>
+{% endfor %}

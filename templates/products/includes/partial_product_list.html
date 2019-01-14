@@ -1,0 +1,38 @@
+{% for product in products %}
+  <tr>
+{#    <td>{{ product.id }}</td>#}
+    <td>{{ product.category }}</td>
+    <td>{{ product.namePdt }}</td>
+    <td>{{ product.price }}</td>
+    <td>{{ product.quantity }}</td>
+    <td>{{ product.minimum }}</td>
+    <td>{{ product.status }}</td>
+    <td >
+      <button type="button"
+              class="btn btn-warning btn-xs js-update-product"
+              data-url="{% url 'product_update' product.id %}"
+              data-toggle="tooltip" data-placement="top" title="Edit Product">
+        <span class="glyphicon glyphicon-pencil"></span> Edit
+      </button>
+      {% if product.status != "Active" %}
+                <button type="button"
+                        class="btn btn-success btn-xs js-activate-product"
+                        data-url="{% url 'product_activate' product.id %}"
+                        data-toggle="tooltip" data-placement="top" title="Activate Product">
+                    <span class="glyphicon glyphicon-check"></span> Activate Product
+                </button>
+            {% elif product.status == "Active" %}
+                <button type="button"
+                        class="btn btn-danger btn-xs js-deactivate-product"
+                        data-url="{% url 'product_deactivate' product.id %}"
+                        data-toggle="tooltip" data-placement="top" title="Deactivate Product">
+                    <span class="glyphicon glyphicon-eject"></span> Deactivate Product
+                </button>
+      {% endif %}
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No Product Yet!</td>
+  </tr>
+{% endfor %}

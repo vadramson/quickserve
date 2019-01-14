@@ -1,0 +1,29 @@
+{% for user in users %}
+  <tr>
+{#    <td>{{ profile.id }}</td>#}
+    <td>{{ user.username }}</td>
+    <td>{{ user.first_name }}</td>
+    <td>{{ user.last_name }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.profile.role }}</td>
+    <td>{{ user.profile.birthDate }}</td>
+{#    <td >#}
+{#      <button type="button"#}
+{#              class="btn btn-warning btn-xs js-update-profile"#}
+{#              data-url="{% url 'profile_update' profile.id %}"#}
+{#              data-toggle="tooltip" data-placement="top" title="Edit Profile">#}
+{#        <span class="glyphicon glyphicon-pencil"></span> Edit#}
+{#      </button>#}
+{#      <button type="button"#}
+{#              class="btn btn-danger btn-xs js-delete-profile"#}
+{#              data-url="{% url 'profile_delete' profile.id %}"#}
+{#              data-toggle="tooltip" data-placement="top" title="Delete Profile">#}
+{#        <span class="glyphicon glyphicon-trash"></span> Delete#}
+{#      </button>#}
+{#    </td>#}
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No Profiles Yet!</td>
+  </tr>
+{% endfor %}

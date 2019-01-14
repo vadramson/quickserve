@@ -1,0 +1,27 @@
+
+{% load widget_tweaks %}
+
+
+<div class="form-group{% if form.errors %} has-error{% endif %}">
+    <label for="{{ product }}">Product</label>
+    {{ form.product|attr:"name : product"|attr:"placeholder : Enter Purchase Name"|attr:"class : form-control"|attr:"id : product" }}
+    <p class="help-block">{{ form.product.errors }}</p>
+</div>
+<div class="form-group{% if form.errors %} has-error{% endif %}">
+    <label for="{{ quantity }}">Product quantity</label>
+    {{ form.quantity|attr:"name : quantity"|attr:"placeholder : Enter Product quantity"|attr:"class : form-control"|attr:"id : quantity" }}
+    <p class="help-block">{{ form.quantity.errors }}</p>
+</div>
+<div class="form-group{% if form.errors %} has-error{% endif %}">
+    <label for="{{ amount }}">Purchase Amount</label>
+    {{ form.amount|attr:"name : amount"|attr:"placeholder : Enter Purchase Amount"|attr:"class : form-control"|attr:"id : amount" }}
+    <p class="help-block">{{ form.amount.errors }}</p>
+</div>
+{#<div class="form-group">#}
+{#    <label for="justification">Justification of Purchase</label>#}
+{#    {{ form.justification|attr:"name : justification"|attr:"placeholder : Enter Purchase Percentage Pay Raise"|attr:"class : form-control"|attr:"id : justification" }}#}
+{#    <input type="file" name="justification" class="form-control" required>#}
+{#    <p class="help-block">{{ form.justification.errors }}</p>#}
+{#</div>#}
+
+<input type="hidden" name="user" value="{{user.id}}">
