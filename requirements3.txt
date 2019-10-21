@@ -5,7 +5,7 @@ click==6.7
 coreapi==2.3.1
 coreapi-cli==1.0.6
 coreschema==0.0.4
-Django==1.11.3
+Django==1.11.23
 django-bulk-update==2.1.0
 django-cors-headers==2.0.0
 django-crispy-forms==1.6.1
