@@ -31,7 +31,7 @@ psycopg2==2.7.2
 PyJWT==1.5.2
 pyparsing==2.2.0
 pytz==2017.2
-reportlab==3.4.0
+reportlab==3.5.55
 requests==2.18.1
 six==1.10.0
 sqlparse==0.2.3
